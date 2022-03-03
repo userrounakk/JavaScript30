@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300;500&display=swap');
+*{
+    background-color: #202124;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    nav{
+        display: flex;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 5vw;
+            color: #FA7167;
+        }
+    }
+    main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 50%;
+    
+    overflow: scroll;
+    .drum-pad{
+        margin: 1vw;
+        background-color: #FA7167;
+        border-radius: 5px;
+        height: 5vw;
+        width: 5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 3vw;
+        font-family: 'Smooch Sans', sans-serif;
+        color: #fff;
+        transition: .2s ease-in;
+        .key{
+            background-color:transparent;
+            font-weight: 700;
+        }
+        .sound-name{
+            background-color: transparent;
+            font-size: 50%;
+        }
+    }
+    .playing{
+        scale:1.2;
+        border: 2px solid #fff;
+    }
+}
+}
+@media screen and (max-width: 600px){
+    body{
+        nav{
+            height: 10%;
+            h1{
+                font-size: 8vw;
+            }
+        }
+        main{
+        flex-direction: column;
+        align-items: center;
+        height: 90%;
+        .drum-pad{
+        font-size: 5vw;
+        height: 20vw;
+        width: 20vw;
+        }
+        .playing{
+            scale:1.1;
+        }
+    }
+    }
+    }
+
+    

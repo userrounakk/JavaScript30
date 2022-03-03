@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300;500&display=swap");
+* {
+  background-color: #202124;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+body nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav h1 {
+  font-size: 5vw;
+  color: #FA7167;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50%;
+  overflow: scroll;
+}
+
+body main .drum-pad {
+  margin: 1vw;
+  background-color: #FA7167;
+  border-radius: 5px;
+  height: 5vw;
+  width: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3vw;
+  font-family: 'Smooch Sans', sans-serif;
+  color: #fff;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+
+body main .drum-pad .key {
+  background-color: transparent;
+  font-weight: 700;
+}
+
+body main .drum-pad .sound-name {
+  background-color: transparent;
+  font-size: 50%;
+}
+
+body main .playing {
+  scale: 1.2;
+  border: 2px solid #fff;
+}
+
+@media screen and (max-width: 600px) {
+  body nav {
+    height: 10%;
+  }
+  body nav h1 {
+    font-size: 8vw;
+  }
+  body main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 90%;
+  }
+  body main .drum-pad {
+    font-size: 5vw;
+    height: 20vw;
+    width: 20vw;
+  }
+  body main .playing {
+    scale: 1.1;
+  }
+}
+/*# sourceMappingURL=style.css.map */

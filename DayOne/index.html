@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h1>Drum Kit</h1>
+    </nav>
+
+    <main>
+        <div class="drum-pad" key-code="65" onclick="clicked(65)">
+            <div class="key">A</div>
+            <div class="sound-name">Boom</div>
+        </div>
+        <div class="drum-pad" key-code="83" onclick="clicked(83)">
+            <div class="key">S</div>
+            <div class="sound-name">Clap</div>
+        </div>
+        <div class="drum-pad" key-code="68" onclick="clicked(68)">
+            <div class="key">D</div>
+            <div class="sound-name">Hit Hat</div>
+        </div>
+        <div class="drum-pad" key-code="70" onclick="clicked(70)">
+            <div class="key">F</div>
+            <div class="sound-name">Kick</div>
+        </div>
+        <div class="drum-pad" key-code="71" onclick="clicked(71)">
+            <div class="key">G</div>
+            <div class="sound-name">Open Hat</div>
+        </div>
+        <div class="drum-pad" key-code="72" onclick="clicked(72)">
+            <div class="key">H</div>
+            <div class="sound-name">Ride</div>
+        </div>
+        <div class="drum-pad" key-code="74" onclick="clicked(74)">
+            <div class="key">J</div>
+            <div class="sound-name">Snare</div>
+        </div>
+        <div class="drum-pad" key-code="75" onclick="clicked(75)">
+            <div class="key">K</div>
+            <div class="sound-name">Tink</div>
+        </div>
+        <div class="drum-pad" key-code="76" onclick="clicked(76)">
+            <div class="key">L</div>
+            <div class="sound-name">Tom</div>
+        </div>
+
+
+        <audio src="Sounds/boom.wav" key-code="65"></audio>
+        <audio src="Sounds/clap.wav" key-code="83"></audio>
+        <audio src="Sounds/hihat.wav" key-code="68"></audio>
+        <audio src="Sounds/kick.wav" key-code="70"></audio>
+        <audio src="Sounds/openhat.wav" key-code="71"></audio>
+        <audio src="Sounds/ride.wav" key-code="72"></audio>
+        <audio src="Sounds/snare.wav" key-code="74"></audio>
+        <audio src="Sounds/tink.wav" key-code="75"></audio>
+        <audio src="Sounds/tom.wav" key-code="76"></audio>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
