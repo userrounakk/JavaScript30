@@ -36,6 +36,17 @@ main .clock {
   padding: 1vh;
 }
 
+main .clock .center {
+  position: absolute;
+  top: 19vh;
+  left: 20vh;
+  background-color: #202124;
+  height: 2vh;
+  width: 2vh;
+  border-radius: 50%;
+  border: 2px solid #FA7167;
+}
+
 main .clock .hand {
   width: 20vh;
   border: #FA7167 1px solid;
@@ -71,7 +82,6 @@ main .time {
       -ms-flex-direction: column;
           flex-direction: column;
   font-size: 5rem;
-  font-family: 'Share Tech Mono', monospace;
   color: #FA7167;
 }
 
@@ -92,7 +102,6 @@ main .time .day-date {
       -ms-flex-align: center;
           align-items: center;
   font-size: 2rem;
-  font-family: 'Share Tech Mono', monospace;
   color: #FA7167;
 }
 /*# sourceMappingURL=style.css.map */

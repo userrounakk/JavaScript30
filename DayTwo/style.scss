@@ -23,7 +23,16 @@ main{
         border:2px solid #FA7167;
         border-radius: 50%;
         padding: 1vh;
-
+        .center{
+            position:absolute;
+            top:19vh;
+            left: 20vh;
+            background-color: #202124;
+            height: 2vh;
+            width: 2vh;
+            border-radius: 50%; 
+            border: 2px solid #FA7167;
+        }
         .hand{
             width:20vh;
             border: #FA7167 1px solid;
@@ -51,7 +60,7 @@ main{
         display: flex;
         flex-direction: column;
         font-size: 5rem;
-        font-family: 'Share Tech Mono', monospace;
+        
         color: #FA7167;
         .current-time{
             display: flex;
@@ -61,7 +70,7 @@ main{
             justify-content: space-between;
             align-items: center;
             font-size: 2rem;
-            font-family: 'Share Tech Mono', monospace;
+            
             color: #FA7167;
         }
     }

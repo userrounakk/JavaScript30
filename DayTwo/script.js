@@ -12,8 +12,9 @@ var date = document.querySelector('.date');
 var today = new Date();
 const Days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursady', 'Friday', 'Saturday'];
 const Months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
 day.innerHTML = Days[today.getDay()];
-date.innerHTML = `${Months[today.getMonth()]}, ${today.getDate()}`
+date.innerHTML = `${Months[today.getMonth()]}, ${today.getDate()}`;
 
 function changeTime() {
     var now = new Date();
@@ -28,11 +29,8 @@ function changeTime() {
     minHand.style.transform = `rotate(${minDeg}deg)`;
     hourHand.style.transform = `rotate(${hourDeg}deg)`;
 
-    digiSec.innerHTML = sec;
-    digiMin.innerHTML = min;
+    digiSec.innerHTML = sec < 10 ? `0${sec}` : sec;
+    digiMin.innerHTML = min < 10 ? `0${min}` : min;
     digiHour.innerHTML = hour;
 }
-setInterval(changeTime, 1000)
-
-console.log(sec)
-console.log(min)
+setInterval(changeTime, 1000);
