@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+* {
+  background-color: #202125;
+  color: var(--heading-color);
+  font-family: 'Syne Mono', monospace;
+}
+
+:root {
+  --font-size: 4vw;
+  --heading-color: #fa7167;
+  --image-width: 40%;
+}
+
+main #items {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #items h1 {
+  margin: 2% 0;
+  font-size: var(--font-size);
+  color: var(--heading-color);
+}
+
+main #items img {
+  width: var(--image-width);
+  height: auto;
+  border-radius: 5px;
+}
+
+main #controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+main #controls h4 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 3vw;
+  margin: 2% 0;
+}
+
+main #controls .control-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main #controls .control-options .heading-control, main #controls .control-options .image-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #controls .control-options .heading-control h6, main #controls .control-options .image-control h6 {
+  font-size: 3vw;
+  margin: 3% 0;
+}
+
+main #controls .control-options .heading-control label, main #controls .control-options .heading-control input, main #controls .control-options .image-control label, main #controls .control-options .image-control input {
+  margin: 2%;
+  width: 50%;
+}
+
+main #controls .control-options .heading-control input[type="color"], main #controls .control-options .image-control input[type="color"] {
+  background-color: transparent;
+  border: none;
+}
+
+@media screen and (max-width: 800px) {
+  #controls {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #controls .control-options {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #controls .control-options .heading-control label, #controls .control-options .heading-control input, #controls .control-options .image-control label, #controls .control-options .image-control input {
+    width: 100% !important;
+    font-size: 3vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

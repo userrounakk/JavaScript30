@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+*{
+background-color: #202125;
+color: var(--heading-color);
+font-family: 'Syne Mono', monospace;
+}
+:root{
+    --font-size: 4vw;
+    --heading-color: #fa7167;
+    --image-width: 40%;
+}
+main{
+    #items{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+            margin: 2% 0;
+            font-size: var(--font-size);
+            color: var(--heading-color);
+        }
+        img{
+            width: var(--image-width);
+            height: auto;
+            border-radius: 5px;
+        }
+    }
+    #controls{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        h4{
+            align-self: center;
+            font-size: 3vw;
+            margin:2% 0;
+            
+        }
+        .control-options{
+            display: flex;
+            justify-content: space-around;
+
+            .heading-control,.image-control{
+                display:flex;
+                flex-direction: column;
+                h6{
+                font-size: 3vw;
+                margin: 3% 0;
+                }
+                label,input{
+                    margin: 2%;
+                    width: 50%;
+                }
+                input[type="color"]{
+                    background-color: transparent;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:800px) {
+    #controls{
+        flex-direction: column;
+        // align-items: center;
+        .control-options{
+            flex-direction: column;
+
+            .heading-control,.image-control{
+                label,input{
+                    width: 100% !important;
+                    font-size: 3vw;
+                }
+            }
+        }
+        
+    }
+}
