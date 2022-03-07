@@ -3,6 +3,13 @@ images.forEach(image => image.addEventListener('click', toggleOpen));
 var act;
 
 function toggleOpen(e) {
-    (document.querySelector('.active')) ? document.querySelector('.active').classList.remove('active') : null;
-    this.classList.toggle('active')
+    if (console.log(this.classList.length > 2)) {
+        this.classList.remove('active');
+    } else if (document.querySelector('.active')) {
+        document.querySelector('.active').classList.remove('active');
+    } else {
+        this.classList.add('active');
+    };
+
+
 }
