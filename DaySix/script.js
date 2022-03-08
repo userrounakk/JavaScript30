@@ -1,4 +1,4 @@
-var endpoint = window.location.origin + '/DaySix/districts.json';
+var endpoint = window.location.href.replace('index.html', 'districts.json');
 var search = document.querySelector('#search-field');
 var listDisp = document.querySelector('#list');
 
