@@ -10,6 +10,4 @@ function toggleOpen(e) {
     } else {
         this.classList.add('active');
     };
-
-
 }
