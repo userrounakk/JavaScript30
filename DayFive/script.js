@@ -3,7 +3,6 @@ images.forEach(image => image.addEventListener('click', toggleOpen));
 var act;
 
 function toggleOpen(e) {
-    // console.log(this.classList.length > 2);
     if (this.classList.length > 2) {
         this.classList.remove('active');
     } else if (document.querySelector('.active')) {

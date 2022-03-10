@@ -1,0 +1,58 @@
+body{
+    width: 100vw;
+    background-color: #202124;
+    text-align: center;
+    color: #FA7167;
+    overflow-x: hidden;
+    canvas{
+        // height:50vh;
+        // width: 80vw;
+        border: 2px solid #FA7167;
+        border-radius: 10px;
+    }
+    form{
+        margin-top: 1%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 20px;
+        color: #fff;
+
+        .tool{
+            display: flex;
+            justify-content: space-around;
+            width: 10%;
+            button{
+            color: #fa6167;
+            height: 40px;
+            width: 40px;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            }
+            .active{
+                background-color: #FA7167;
+                color: #fff;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    body{
+        form{
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-left: 10%;
+            *{
+                margin-top: 10px;
+            }
+            .tool{
+                width:30%;
+                justify-content:space-between;
+            }
+        }
+    }
+}

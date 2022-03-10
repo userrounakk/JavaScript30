@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <h1>
+        Canvas
+    </h1>
+    <canvas id="draw-board"></canvas>
+    <form action="">
+        <div class="tool">
+            <button id="pen" class="active">
+                <i class="fa-solid fa-pen"></i>
+            </button>
+            <button id="eraser">
+                <i class="fa-solid fa-eraser"></i>
+            </button>
+        </div>
+
+        <label for="color">Pen Color: &nbsp;<input type="color" name="color" id="color" value="#fa6167"></label>
+        <label for="width" id="width-text">Pen Size: &nbsp;<input type="range" name="width" min="1" max="50" value="1"
+                id="width"></label>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
