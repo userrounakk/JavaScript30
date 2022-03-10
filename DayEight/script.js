@@ -97,5 +97,5 @@ function download(e) {
 
 function clearCanvas(e) {
     e.preventDefault();
-    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.fillRect(0, 0, canvas.width, canvas.height);
 }
