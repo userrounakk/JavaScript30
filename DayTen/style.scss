@@ -1,0 +1,34 @@
+body{
+    background-color: #202124;
+    color: #FA7167;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #memo{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        width: 60vw;
+        .item{
+            display: flex;
+            align-items: center;
+            background-color: #202120;
+            border: 1px solid #fff;
+            padding: 0 20px;
+            border-radius: 10px;
+            margin: 5px 0;
+            p{
+                margin-left:20px
+            }
+
+            input:checked + p{
+                text-decoration: line-through;
+                color: #FAF9F6;
+            }
+        }
+    }
+}
+main{
+    margin-top: 10vh;
+}
