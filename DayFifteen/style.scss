@@ -63,17 +63,44 @@ body{
         font-size: 1.5rem;
     }
     button{
+        display: flex;
         width: 8%;
         height: auto;
-        padding:20px;
+        padding: 20px;
         border-radius: 10px;
         border: none;
         background-color: #FA7167;
         font-size: 1.5rem;
         color: #fff;
+        justify-content: center;
+        align-items: center;
     }
-}
+        
+    }
 }
 main{
     margin-top: 10vh;
+}
+
+@media screen and (max-width:500px) {
+    body{
+        section{
+            font-size: 1rem;
+        }
+        
+        form{
+            
+            flex-direction: column;
+            input{
+                font-size: 1rem;
+            }
+            button{
+            width: 100%;
+        }
+        }
+        
+        // input{
+        //     width: 100%;
+        // }
+    }
 }

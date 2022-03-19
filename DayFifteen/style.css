@@ -98,6 +98,9 @@ body form input {
 }
 
 body form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 8%;
   height: auto;
   padding: 20px;
@@ -106,9 +109,33 @@ body form button {
   background-color: #FA7167;
   font-size: 1.5rem;
   color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main {
   margin-top: 10vh;
+}
+
+@media screen and (max-width: 500px) {
+  body section {
+    font-size: 1rem;
+  }
+  body form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body form input {
+    font-size: 1rem;
+  }
+  body form button {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

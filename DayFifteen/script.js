@@ -15,6 +15,7 @@ showTasks();
 
 function addTask(e) {
     e.preventDefault();
+    if (newTask.value == '') return;
     tasks.push({
         task: newTask.value,
         isCompleted: false,
