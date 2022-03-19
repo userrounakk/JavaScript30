@@ -7,7 +7,7 @@ const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
 
 addTasks.addEventListener('submit', addTask);
-tasksList, addEventListener('click', checked);
+tasksList.addEventListener('click', checked);
 
 
 
@@ -47,6 +47,9 @@ function checked(e) {
     } else {
         tasks[index].isCompleted = true;
     }
+
+    tasks.push(tasks.splice(index, 1)[0]);
+
     localStorage.setItem('tasks', JSON.stringify(tasks));
     showTasks();
 }
