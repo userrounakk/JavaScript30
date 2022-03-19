@@ -1,0 +1,114 @@
+body {
+  background-color: #202124;
+  color: #FA7167;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5rem;
+  width: 60vw;
+}
+
+body section .task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #202120;
+  border: 1px solid #fff;
+  padding: 0 20px;
+  border-radius: 10px;
+  margin: 5px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+body section .task .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section .task .content label {
+  margin-left: 20px;
+}
+
+body section .task .content input:checked + label {
+  text-decoration: line-through;
+  color: #FAF9F6;
+}
+
+body section .task #delete {
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  font-size: 1.5rem;
+  color: #FA7167;
+  padding: 10px;
+}
+
+body form {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60vw;
+  font-size: 1.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body form input {
+  width: 86%;
+  height: auto;
+  background-color: #202120;
+  border: 1px solid #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 5px 0;
+  color: #FA7167;
+  font-size: 1.5rem;
+}
+
+body form button {
+  width: 8%;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #FA7167;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+main {
+  margin-top: 10vh;
+}
+/*# sourceMappingURL=style.css.map */
