@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #202124;
+}
+
+body .context {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fa6167;
+}
+
+h1 {
+  font-size: 100px;
+  margin: auto;
+}
+/*# sourceMappingURL=style.css.map */
