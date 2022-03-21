@@ -1,0 +1,26 @@
+body{
+    background-color: #202124;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    h1{
+        color:#FA7167;
+        font-size: 3rem;
+    }
+    ul{ 
+        height: max-content;
+        width: 40vw;
+        padding: 10px;
+        li{
+            display: block;
+            background-color: rgba(255,255,255,0.7);
+            padding: 10px;
+            margin: 2px;
+            border-radius: 5px;
+            text-decoration: none;
+            border: px solid rgba($color: #FA7167, $alpha: .5);
+        }
+    }
+}
